@@ -41,8 +41,20 @@
     <script src="assets/vendor.js"></script>
     <script src="assets/bdd-tutorial.js"></script>
     <script src="testem.js"></script>
+    <!-- // code i add when compare with oliver's -->
+    <script src="assets/mocha.js"></script>
+    <script src="assets/adapter-qunit.js"></script>
+    <script src="assets/chai.js"></script>
+    <script src="assets/sinon.js"></script>
+    <script src="assets/sinon-chai.js"></script>
+    <script src="testem.js"></script>
+    /<!-- / end of adding -->
+
+
     <script>
       require('bdd-tutorial/tests/test-helper');
+      // added code
+      require('participate-frontend/tests/test-loader');
     </script>
     <script src="assets/test-loader.js"></script>
   </body>
