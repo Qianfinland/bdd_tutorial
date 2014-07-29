@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>BddTutorial</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    {{BASE_TAG}}
+
+    <link rel="stylesheet" href="assets/vendor.css">
+    <link rel="stylesheet" href="assets/bdd-tutorial.css">
+  </head>
+  <body>
+    <script>
+      window.BddTutorialENV = {{ENV}};
+      window.EmberENV = window.BddTutorialENV.EmberENV;
+    </script>
+    <script src="assets/vendor.js"></script>
+    <script src="assets/bdd-tutorial.js"></script>
+    <script>
+      window.BddTutorial = require('bdd-tutorial/app')['default'].create(BddTutorialENV.APP);
+    </script>
+  </body>
+</html>
